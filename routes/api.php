@@ -7,3 +7,9 @@ use App\Http\Controllers\LoginController;
 // Route::middleware('auth')->get('user', [UserController::class, 'show']);
 
 Route::post('/user/login', [LoginController::class, 'authenticate']);
+
+
+// Route::post('/user/login', function () {
+//     return response()
+//         ->json(['name' => 'Abigail', 'state' => 'CA']);
+// });
