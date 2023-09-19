@@ -6,11 +6,10 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 
+
 class LoginController extends Controller
 {
-
-
-    public function authenticate(Request $request): RedirectResponse
+    public function authenticate(Request $request)
     {
         $credentials = $request->validate([
             'email' => ['required', 'email'],
@@ -19,8 +18,9 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-
-            return redirect()->intended('http://localhost:5173/about');
+            return response()
+                ->json(['name' =>  '$request'], 200);
+            // return redirect()->intended('http://localhost:5173/about');
         }
 
         return back()->withErrors([
