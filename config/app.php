@@ -141,11 +141,7 @@ return [
 
     'maintenance' => [
         'driver' => 'file',
-<<<<<<< HEAD
-        // 'store'  => 'redis',
-=======
         // 'store' => 'redis',
->>>>>>> c218984 (UP: change docker to create composer)
     ],
 
     /*
@@ -170,10 +166,6 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-<<<<<<< HEAD
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-=======
->>>>>>> c218984 (UP: change docker to create composer)
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),

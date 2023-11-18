@@ -21,12 +21,6 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-<<<<<<< HEAD
-        /*  Login */
-        \Illuminate\Session\Middleware\StartSession::class,
-        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-=======
->>>>>>> c218984 (UP: change docker to create composer)
     ];
 
     /**
@@ -46,11 +40,7 @@ class Kernel extends HttpKernel
 
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-<<<<<<< HEAD
-            \Illuminate\Routing\Middleware\ThrottleRequests::class . ':api',
-=======
             \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
->>>>>>> c218984 (UP: change docker to create composer)
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
