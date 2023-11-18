@@ -14,7 +14,11 @@ return [
     */
 
     'defaults' => [
+<<<<<<< HEAD
         'guard' => 'api',
+=======
+        'guard' => 'web',
+>>>>>>> c218984 (UP: change docker to create composer)
         'passwords' => 'users',
     ],
 
@@ -36,8 +40,13 @@ return [
     */
 
     'guards' => [
+<<<<<<< HEAD
         'api' => [
             'driver' => 'jwt',
+=======
+        'web' => [
+            'driver' => 'session',
+>>>>>>> c218984 (UP: change docker to create composer)
             'provider' => 'users',
         ],
     ],

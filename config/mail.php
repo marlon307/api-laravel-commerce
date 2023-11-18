@@ -59,6 +59,10 @@ return [
 
         'postmark' => [
             'transport' => 'postmark',
+<<<<<<< HEAD
+=======
+            // 'message_stream_id' => null,
+>>>>>>> c218984 (UP: change docker to create composer)
             // 'client' => [
             //     'timeout' => 5,
             // ],

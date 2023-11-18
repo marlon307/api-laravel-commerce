@@ -3,12 +3,16 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+<<<<<<< HEAD
 use Tymon\JWTAuth\Contracts\JWTSubject;
+=======
+>>>>>>> c218984 (UP: change docker to create composer)
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+<<<<<<< HEAD
 class User extends Authenticatable implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
@@ -34,6 +38,12 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+=======
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+
+>>>>>>> c218984 (UP: change docker to create composer)
     /**
      * The attributes that are mass assignable.
      *
@@ -64,9 +74,12 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+<<<<<<< HEAD
 
     public function preference()
     {
         return $this->hasOne(Preferences::class);
     }
+=======
+>>>>>>> c218984 (UP: change docker to create composer)
 }
